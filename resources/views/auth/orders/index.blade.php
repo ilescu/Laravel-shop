@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="col-md-12">
-        <h1>Заказы</h1>
+        <h1>Orders</h1>
         <table class="table">
             <tbody>
             <tr>
@@ -12,19 +12,19 @@
                     #
                 </th>
                 <th>
-                    Имя
+                    Name
                 </th>
                 <th>
-                    Телефон
+                    Telefon
                 </th>
                 <th>
-                    Когда отправлен
+                    When sent
                 </th>
                 <th>
-                    Сумма
+                    Price
                 </th>
                 <th>
-                    Действия
+                    Actions
                 </th>
             </tr>
             @foreach($orders as $order)
@@ -36,7 +36,7 @@
 {{--                    <td>{{ $order->sum }} {{ $order->currency->symbol }}</td>--}}
                     <td>
                         <div class="btn-group" role="group">
-                            <a class="btn btn-success" type="button" href="#">Открыть</a>
+                            <a class="btn btn-success" type="button" href="#">Open order</a>
                         </div>
                     </td>
                 </tr>

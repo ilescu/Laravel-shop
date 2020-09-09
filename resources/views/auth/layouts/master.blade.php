@@ -23,16 +23,16 @@
 <div id="app">
     <nav class="navbar navbar-default navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('index') }}">Вернуться на сайт</a>
+            <a class="navbar-brand" href="{{ route('index') }}">Back to WebSite</a>
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Категории</a></li>
+                    <li><a href="{{ route('categories.index') }}">Category</a></li>
                     <li><a href="#">Товары</a></li>
                     <li><a href="#">Свойства</a></li>
                     <li><a href="#">Купоны</a></li>
                     <li><a href="#">Поставщики</a></li>
-                    <li><a href="{{ route('home') }}">Заказы</a></li>
+                    <li><a href="{{ route('home') }}">Orders</a></li>
                 </ul>
 
                 @guest
