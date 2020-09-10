@@ -5,7 +5,7 @@
         <div class="product__inner">
             <div class="pro__thumb">
                 <a href="#">
-                    <img src="images/product/1.png" alt="product images">
+                    <img style="border: 1px solid lightgrey;" src="{{ Storage::url($product->image) }}" alt="product images">
                 </a>
             </div>
             <div class="product__hover__info">

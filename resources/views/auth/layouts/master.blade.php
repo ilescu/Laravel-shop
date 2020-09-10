@@ -7,32 +7,26 @@
 
     <title>Админка: @yield('title')</title>
 
-    <!-- Scripts -->
-    <script src="/js/app.js" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/admin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin.css">
 </head>
 <body>
 <div id="app">
     <nav class="navbar navbar-default navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('index') }}">Back to WebSite</a>
+            <a class="navbar-brand" target="_blank" href="{{ route('index') }}">Back to WebSite</a>
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('categories.index') }}">Category</a></li>
-                    <li><a href="#">Товары</a></li>
-                    <li><a href="#">Свойства</a></li>
-                    <li><a href="#">Купоны</a></li>
-                    <li><a href="#">Поставщики</a></li>
-                    <li><a href="{{ route('home') }}">Orders</a></li>
+                    <li><a href="{{ route('products.index') }}">Products</a></li>
+                    <li><a style="color: #4cae4c" href="{{ route('home') }}">Orders</a></li>
                 </ul>
 
                 @guest
