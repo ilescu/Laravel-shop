@@ -28,6 +28,7 @@
                 <div class="input-group row">
                     <label for="code" class="col-sm-2 col-form-label">Code: </label>
                     <div class="col-sm-6">
+                        @include('auth.layouts.error', ['fieldName' => 'code'])
                         <input type="text" class="form-control" name="code" id="code"
                                value="@isset($product){{ $product->code }}@endisset">
                     </div>
@@ -36,6 +37,7 @@
                 <div class="input-group row">
                     <label for="name" class="col-sm-2 col-form-label">Name: </label>
                     <div class="col-sm-6">
+                        @include('auth.layouts.error', ['fieldName' => 'name'])
                         <input type="text" class="form-control" name="name" id="name"
                                value="@isset($product){{ $product->name }}@endisset">
                     </div>
@@ -61,6 +63,7 @@
                 <div class="input-group row">
                     <label for="description" class="col-sm-2 col-form-label">Descpription: </label>
                     <div class="col-sm-6">
+                        @include('auth.layouts.error', ['fieldName' => 'description'])
 								<textarea name="description" id="description" cols="72"
                                           rows="7">@isset($product){{ $product->description }}@endisset</textarea>
                     </div>
@@ -78,6 +81,7 @@
                 <div class="input-group row">
                     <label for="price" class="col-sm-6 col-form-label">Price: </label>
                     <div class="col-sm-6">
+                        @include('auth.layouts.error', ['fieldName' => 'price'])
                         <input type="text" class="form-control" name="price" id="price"
                                value="@isset($product){{ $product->price }}@endisset">
                     </div>
